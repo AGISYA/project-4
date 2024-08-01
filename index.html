@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar dengan Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex bg-gray-50">
+    <!-- Sidebar -->
+    <nav class="w-64 text-gray-300 h-screen p-5">
+      <div class="flex items-center mb-6">
+        <img src="./asset/Frame.png" alt="Logo" class="w-8 h-8 mr-3" />
+        <h1 class="text-2xl font-bold text-black">Agisya CBT</h1>
+      </div>
+      <p class="mb-4 text-black">Daily Use</p>
+      <ul>
+        <li class="flex items-center mb-4 hover:text-w hover:bg-blue-700 rounded-lg p-2">
+          <img
+            src="./asset/home-hashtag.png"
+            alt="Overview"
+            class="w-5 h-5 mr-3"
+          />
+          <a href="#" class="text-black hover:text-white font-semibold">Overview</a>
+        </li>
+        <li class="flex items-center mb-4 hover:bg-blue-700 rounded-lg p-2">
+          <img
+            src="./asset/note-favorite.png"
+            alt="Courses"
+            class="w-5 h-5 mr-3"
+          />
+          <a href="#" class="text-black hover:text-white font-semibold">Courses</a>
+        </li>
+        <li class="flex items-center mb-4 hover:bg-blue-700 rounded-lg p-2">
+          <img
+            src="./asset/crown.png"
+            alt="Certificates"
+            class="w-5 h-5 mr-3"
+          />
+          <a href="#" class="text-black hover:text-white font-semibold">Certificates</a>
+        </li>
+        <li class="flex items-center mb-4 hover:bg-blue-700 rounded-lg p-2">
+          <img
+            src="./asset/sms-tracking.png"
+            alt="Messages"
+            class="w-5 h-5 mr-3"
+          />
+          <a href="#" class="text-black hover:text-white font-semibold">Messages</a>
+        </li>
+        <li class="flex items-center mb-4 hover:bg-blue-700 rounded-lg p-2">
+          <img
+            src="./asset/profile-2user.png"
+            alt="Portfolio"
+            class="w-5 h-5 mr-3"
+          />
+          <a href="#" class="text-black hover:text-white font-semibold">Portfolio</a>
+        </li>
+      </ul>
+      <p class="mt-6 mb-4 text-black font-semibold">Others</p>
+      <ul>
+        <li class="flex items-center mb-4 hover:bg-blue-700 rounded-lg p-2">
+          <img src="./asset/3dcube.png" alt="Rewards" class="w-5 h-5 mr-3" />
+          <a href="#" class="text-black hover:text-white font-semibold">Rewards</a>
+        </li>
+        <li class="flex items-center mb-4 hover:bg-blue-700 rounded-lg p-2">
+          <img src="./asset/code.png" alt="A.I Plugins" class="w-5 h-5 mr-3" />
+          <a href="#" class="text-black hover:text-white font-semibold">A.I Plugins</a>
+        </li>
+        <li class="flex items-center mb-4 hover:bg-blue-700 rounded-lg p-2">
+          <img
+            src="./asset/setting-2.png"
+            alt="Settings"
+            class="w-5 h-5 mr-3"
+          />
+          <a href="#" class="text-black hover:text-white font-semibold">Settings</a>
+        </li>
+        <li class="flex items-center mb-4 hover:bg-blue-700 rounded-lg p-2">
+          <img
+            src="./asset/security-safe.png"
+            alt="Logout"
+            class="w-5 h-5 mr-3"
+          />
+          <a href="#" class="text-black hover:text-white font-semibold">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    
+<main class="flex-1">
+    <!-- Navbar -->
+    <nav class="bg-gray-50 flex items-center justify-between p-4 mb-6">
+      <!-- Bagian Kiri: Ikon Pencarian -->
+      <div class="flex items-center bg-gray-200 rounded-full overflow-hidden">
+        <input
+          type="search"
+          placeholder="Search my courses or report..."
+          aria-label="Search my courses or report"
+          class="w-full border-none bg-transparent px-4 py-2 text-gray-900 outline-none"
+        />
+        <img
+          src="./asset/Frame 1318.png"
+          alt="Search Icon"
+          class="w-8 h-8 p-1"
+        />
+      </div>
+      <div class="flex items-center space-x-4">
+        <img
+          src="./asset/Frame 1319.png"
+          alt="Icon 1"
+          class="w-8 h-8 bg-gray-300 rounded-full"
+        />
+        <img
+          src="./asset/Frame 1320.png"
+          alt="Icon 2"
+          class="w-8 h-8 bg-gray-300 rounded-full"
+        />
+        <!-- Profil dengan Nama -->
+        <div class="flex items-center space-x-4">
+          <!-- Nama -->
+          <div class="hidden md:flex flex-col text-right ml-auto">
+            <p class="text-gray-500 text-sm">Howdy</p>
+            <p class="font-semibold text-gray-800">ABDI AGISYA</p>
+          </div>    
+          <!-- Foto Profil -->
+          <img
+            src="./asset/Group 14 (1).png"
+            alt="User Profile Picture"
+            class="w-10 h-10 rounded-full border-2 border-gray-600"
+          />
+        </div>
+      </div>
+    </nav>
+    <div class="border-t"></div>
+  
+    <!-- Konten Utama -->
+    <div class="container mx-auto">
+      <h1 class="text-2xl font-bold text-gray-900 p-2">My Courses</h1>
+      <h2 class="text-gray-500 mb-4 p-2">Finish all given tests to grow</h2>
+  
+      <!-- Tabel Kursus -->
+      <section>
+        <table class="w-full min-w-full divide-y divide-gray-200">
+          <thead>
+            <tr class="bg-gray-50">
+              <th class="py-2 px-4 border-b text-left">Course</th>
+              <th class="py-2 px-4 border-b text-left">Date Created</th>
+              <th class="py-2 px-4 border-b text-left">Category</th>
+              <th class="py-2 px-4 border-b text-left">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-50">
+              <td class="py-2 px-4 border-b flex items-start space-x-4">
+                <img
+                  src="./asset/Digital Marketing 101.png"
+                  alt="Digital Marketing 101 Course Image"
+                  class="w-12 h-12 rounded-full border-2 border-gray-300"
+                />
+                <div class="text-left">
+                  <p class="font-bold text-lg">Digital Marketing 101</p>
+                  <p class="text-gray-500 text-sm">Beginners</p>
+                </div>
+              </td>
+              <td class="py-2 px-4 border-b font-bold text-left">
+                11 March 2024
+              </td>
+              <td class="py-2 px-4 border-b text-left">
+                <a
+                  href="#"
+                  class="bg-blue-300 text-blue-600 py-2 px-4 rounded-full text-sm font-bold hover:bg-blue-400 transition duration-300"
+                  >Marketing</a
+                >
+              </td>
+              <td class="py-2 px-4 border-b text-left">
+                <a
+                  href="#"
+                  class="bg-purple-700 text-white py-2 px-4 rounded-full text-sm font-bold hover:bg-purple-600 transition duration-300"
+                  >Start Test</a
+                >
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-2 px-4 border-b flex items-start space-x-4">
+                <img
+                  src="./asset/UIUX 2.png"
+                  alt="Usability Testing Course Image"
+                  class="w-12 h-12 rounded-full border-2 border-gray-300"
+                />
+                <div class="text-left">
+                  <p class="font-bold text-lg">Usability Testing</p>
+                  <p class="text-gray-500 text-sm">Beginners</p>
+                </div>
+              </td>
+              <td class="py-2 px-4 border-b font-bold text-left">
+                30 June 2024
+              </td>
+              <td class="py-2 px-4 border-b text-left">
+                <a
+                  href="#"
+                  class="bg-orange-200 text-orange-500 py-2 px-4 rounded-full text-sm font-bold hover:bg-orange-100 transition duration-300"
+                  >Product Design</a
+                >
+              </td>
+              <td class="py-2 px-4 border-b text-left">
+                <a
+                  href="#"
+                  class="bg-black text-white py-2 px-4 rounded-full text-sm font-bold hover:bg-gray-700 transition duration-300"
+                  >Start Test</a
+                >
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="py-2 px-4 border-b flex items-start space-x-4">
+                <img
+                  src="./asset/Web Development.png"
+                  alt="Web Development Course Image"
+                  class="w-12 h-12 rounded-full border-2 border-gray-300"
+                />
+                <div class="text-left">
+                  <p class="font-bold text-lg">Web Development</p>
+                  <p class="text-gray-500 text-sm">Beginners</p>
+                </div>
+              </td>
+              <td class="py-2 px-4 border-b font-bold text-left">
+                30 June 2024
+              </td>
+              <td class="py-2 px-4 border-b text-left">
+                <a
+                  href="#"
+                  class="bg-purple-200 text-purple-700 py-2 px-4 rounded-full text-sm font-bold hover:bg-purple-300 transition duration-300"
+                  >Programming</a
+                >
+              </td>
+              <td class="py-2 px-4 border-b text-left">
+                <a
+                  href="#"
+                  class="bg-purple-700 text-white py-2 px-4 rounded-full text-sm font-bold hover:bg-purple-500 transition duration-300"
+                  >Start Test</a
+                >
+              </td>
+            </tr>
+           
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+  </body>
+</html>
